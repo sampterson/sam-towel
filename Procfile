@@ -1,0 +1,1 @@
+web: gunicorn KingsCupCounter.wsgi --log-file -
