@@ -1,1 +1,1 @@
-web: gunicorn KingsCupCounter.wsgi --log-file -
+web: gunicorn sam-towel.wsgi --log-file -
