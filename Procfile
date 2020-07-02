@@ -1,1 +1,1 @@
-web: gunicorn sam-towel.wsgi --log-file -
+web: gunicorn samtowel.wsgi --log-file -
