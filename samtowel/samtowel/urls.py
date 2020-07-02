@@ -1,3 +1,8 @@
+from django.conf import settings
+from django.conf.urls.static import static
+from django.urls import include
+from django.views.generic import RedirectView
+
 """samtowel URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -17,5 +22,7 @@ from django.contrib import admin
 from django.urls import path
 
 urlpatterns = [
+    path('', RedirectView.as_view(url='sam_towel/', permanent=True)),
+    path('sam_towel/', include('sam_towel.urls')),
     path('admin/', admin.site.urls),
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
