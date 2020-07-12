@@ -15,13 +15,18 @@
         <div class="w3-bar w3-black">
           <!-- TODO: Update these links -->
           <a href="{% url 'index' %}" class="w3-bar-item w3-button">Home</a>
-          <a href="{% url 'index' %}" class="w3-bar-item w3-button">Skiers</a>
+          <a href="{% url 'index' %}" class="w3-bar-item w3-button">Riders</a>
           <a href="{% url 'index' %}" class="w3-bar-item w3-button">Message Board</a>
         </div>
       {% endblock %}
       <div class="col-sm-12">{% block content %}{% endblock %}</div>
     </div>
   </body>
+  <footer>
+    <!-- TODO: Could add a fancy fake official footer -->
+    <br>
+    <br>
+  </footer> 
 </html>
 
 <style>
@@ -29,6 +34,5 @@
   {
     max-width: 1200px;
     margin: auto;
-
   }
 </style>
