@@ -4,8 +4,54 @@
 {% block content %}
   <h1>Sam Towel</h1>
   <p>Welcome to Sam Towel, a website developed by <em>sampterson</em>!</p>
-  <!-- <img src="{% static 'images/hamms_beer.png' %}" height="338" width="217"> -->
+  <h2>Come here for Tasty Snake Trip and other adventure news</h2>
 
-  <h2>Come back for some Tasty Snake Trip and other ski news</h2>
-  <h2>Cheers</h2>
+  <div class="w3-container w3-border-top">
+    <div class="w3-row" style="padding: 20px">
+      <div class="w3-card">
+        <header class="w3-container w3-blue-gray">
+          <h2>Trip Summary: </h2>
+        </header>
+        
+        <div class="w3-container">
+          <div class="w3-col m4" style="padding: 20px">
+            <div class="w3-card">
+              <header class="w3-container w3-blue-gray">
+                <h2>Resort</h2>
+              </header>
+              <div class="w3-container">
+                <h3>Afton Alps</h3> 
+              </div>
+            </div>
+          </div>
+          <div class="w3-col m4" style="padding: 20px">
+            <div class="w3-card">
+              <header class="w3-container w3-blue-gray">
+                <h2>Date</h2>
+              </header>
+              <div class="w3-container">
+                <h3>July 4th</h3> 
+              </div>
+            </div>
+          </div>
+          <div class="w3-col m4" style="padding: 20px">
+            <div class="w3-card">
+              <header class="w3-container w3-blue-gray">
+                <h2>Weather</h2>
+              </header>
+              <div class="w3-container">
+                <h3>Hot</h3> 
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="w3-row" style="padding-top: 20px"></div>
+      <div class="w3-col m12 w3-center">
+        <div class="w3-card">
+          <img src="{% static 'images/im not single.jpg' %}"  class="w3-image">
+        </div>
+      </div>
+    </div>
+  </div>
 {% endblock %}
